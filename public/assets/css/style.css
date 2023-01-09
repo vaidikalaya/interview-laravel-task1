@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{font-family: 'Poppins', sans-serif;}
+
+a{text-decoration: none;}
+
+.btn,input[type=search]{box-shadow: none !important;}
+
+.text-primary2{color:rgb(21, 71, 123) !important;}
+
+.navbar{z-index: 100000000;}
+
+.navbar-brand{
+    color:rgb(21, 71, 123) !important;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.2px;
+}
+
+/*login button css*/
+.login-btn{
+    position: relative;
+    text-decoration: none;
+    background: rgb(21, 71, 123);
+    width: 100px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    letter-spacing: 1.5px;
+}
+.login-btn:hover{
+    color:#ffffff;
+}
+.login-btn:after {
+    content: "";
+    background: rgb(78, 138, 203);
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+.login-btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.navbarExampleSidebar1{
+    width:250px !important;
+    z-index: 100000000;
+}
+.navbarExampleSidebar1 .offcanvas-header{
+    border-bottom: 2px solid rgb(21, 71, 123);
+    color:rgb(21, 71, 123) !important;
+}
+.navbarExampleSidebar1 .offcanvas-body{
+    padding: 0px !important;
+}
+.navbarExampleSidebar1 .nav-link a{
+    color:rgb(21, 71, 123) !important;
+}
+
+/*For Buttons*/
+.btn{
+    box-shadow: none !important;
+  }
+  .btn-primary2{
+    background-color: rgb(21, 71, 123) !important;
+    color: #ffffff !important;
+  }
+  .btn-primary2:hover{
+    color: #ffffff !important;
+  }
+
+/*For Input Fields*/
+input[type=text],[type=number],[type=password],[type=search],[type=email],[type=date]{
+    box-shadow: none !important;
+    background:#ffffff !important;
+  }
+  input[type=checkbox]{
+    box-shadow: none !important;
+  }
+  textarea{
+    box-shadow: none !important;
+    background:#ffffff !important;
+  }
+  select{
+    box-shadow: none !important;
+    background:#ffffff !important;
+  }
+
+@media screen and (max-width: 576px) {
+    .w-sm-100{width: 100% !important;}
+    .m-sm-2{margin-top: 2% !important;}
+}
+
+@media screen and (min-width: 576px) {
+    .navbar{padding: 0px !important;}
+}
+
+@media screen and (min-width: 768px){
+    .w-lg-50{
+      width: 50% !important;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .w-sm-100{
+      width: 100% !important;
+    }
+    .w-sm-50{
+      width: 50% !important;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .m-sm-2{
+        margin-top: 2% !important;
+    }
+  }
